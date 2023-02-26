@@ -28,7 +28,7 @@ main {
 	max-width: 700px;
 	padding: 32px;
 	border-radius: 8px;
-	margin: 20px auto;
+	margin: 32px auto;
 }
 
 main h2 {
@@ -60,6 +60,7 @@ li {
 	background-color: lemonchiffon;
 	color: #222;
 	border-radius: 4px;
+	transition: all 0.1s ease;
 }
 
 .mdn-link:hover,
@@ -69,18 +70,25 @@ li {
 
 footer {
 	text-align: center;
+	margin-bottom: 100px;
+	padding-top: 32px;
 }
 
 .pdf-link {
-	background-color: goldenrod;
-	color: #222;
+	background-color: rgb(234, 199, 112);
+	color: rgb(69, 38, 38);
 	border-radius: 8px;
-	padding: 10px;
-	display: inline-block;
-	margin: 10px;
+	padding: 12px 20px;
+	transition: all 0.1s ease;
+}
+
+.pdf-link:hover,
+.pdf-link:active {
+	background-color: hsl(43, 74%, 58%);
 }
 
 .owner {
 	color: gray;
 	font-size: 14px;
+	margin-top: 30px;
 }
