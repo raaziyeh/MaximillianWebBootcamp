@@ -8,14 +8,19 @@ a {
 	text-decoration: none;
 }
 
+header {
+	/* margin collapsing is the reason why we use padding for header spacing */
+	padding: 32px;
+}
+
 h1 {
 	color: rgb(126, 43, 199);
 	font-weight: 900;
-	margin: 20px auto;
+	font-size: 52px;
 }
 
 header img {
-	width: 150px;
+	width: 300px;
 }
 
 article {
@@ -50,13 +55,13 @@ li {
 .important-li {
 	color: goldenrod;
 	font-weight: bold;
-    margin-left: 0;
+	margin-left: 0;
 }
 
 .important-li::before {
 	content: "|";
 	font-weight: bold;
-    padding-right: 10px;
+	padding-right: 10px;
 }
 
 .mdn-link {
