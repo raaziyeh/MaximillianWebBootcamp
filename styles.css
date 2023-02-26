@@ -1,0 +1,82 @@
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: rgb(244, 220, 244);
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	color: rgb(126, 43, 199);
+	font-weight: 900;
+	margin: 20px auto;
+}
+
+header img {
+	width: 150px;
+}
+
+article {
+	background-color: rgb(126, 43, 199);
+	color: white;
+	max-width: 600px;
+	padding: 20px;
+	border-radius: 8px;
+	margin: 20px auto 10px;
+	text-align: left;
+	font-size: 14px;
+}
+
+article h2 {
+	font-size: 22px;
+}
+
+.emphasis {
+	font-weight: bold;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	margin: 15px 0;
+	margin-left: 10px;
+}
+
+.important-li {
+	color: goldenrod;
+	font-weight: bold;
+    margin-left: 0;
+}
+
+.important-li::before {
+	content: "|";
+	font-weight: bold;
+    padding-right: 10px;
+}
+
+.mdn-link {
+	padding: 5px;
+	background-color: lemonchiffon;
+	color: #222;
+	border-radius: 2px;
+	font-weight: 600;
+}
+
+.pdf-link {
+	background-color: goldenrod;
+	color: #222;
+	border-radius: 8px;
+	padding: 10px;
+	display: inline-block;
+	margin: 10px;
+}
+
+.owner {
+	color: gray;
+	font-size: 14px;
+}
