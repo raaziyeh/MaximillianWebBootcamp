@@ -1,7 +1,6 @@
 body {
 	font-family: "Roboto", sans-serif;
 	background-color: rgb(244, 220, 244);
-	text-align: center;
 }
 
 a {
@@ -11,6 +10,7 @@ a {
 header {
 	/* margin collapsing is the reason why we use padding for header spacing */
 	padding: 32px;
+	text-align: center;
 }
 
 h1 {
