@@ -4,11 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/styles/shared.css" />
+		<link rel="stylesheet" href="/styles/index.css" />
 		<title>WebFood</title>
 	</head>
 	<body>
-		<header>
-			<a>WebFood</a>
+		<header id="main-header">
+			<a id="logo">WebFood</a>
 			<nav>
 				<ul>
 					<li><a href="">Browse Meals</a></li>
@@ -18,26 +20,26 @@
 		</header>
 		<main>
 			<h1>Browse Our Delicious Meals</h1>
-			<section>
+			<section id="latest-products">
 				<ul>
-					<li>
+					<li class="food-item">
 						<article>
 							<img src="/images/risotto.jpg" alt="Risotto with Tiger Prawns" />
-							<div>
+							<div class="food-item-content">
 								<h2>Risotto with Tiger Prawns</h2>
-								<button>Add to Cart</button>
+								<div class="actions"><button>Add to Cart</button></div>
 							</div>
 						</article>
 					</li>
-					<li>
+					<li class="food-item">
 						<article>
 							<img
 								src="/images/cheeseburgers.jpg"
 								alt="Delicious cheeseburger with french fries"
 							/>
-							<div>
+							<div class="food-item-content">
 								<h2>Cheeseburgers</h2>
-								<button>Add to Cart</button>
+								<div class="actions"><button>Add to Cart</button></div>
 							</div>
 						</article>
 					</li>

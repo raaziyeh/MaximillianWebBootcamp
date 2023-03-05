@@ -1,0 +1,61 @@
+body {
+	background: linear-gradient(30deg, rgb(30, 30, 30), rgb(45, 45, 45));
+}
+
+main {
+	padding: 20px 40px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+main h1 {
+	color: rgb(238, 164, 80);
+	font-size: 48px;
+	text-align: center;
+}
+
+#latest-products {
+	width: 80%;
+	margin: 50px auto;
+	text-align: center;
+}
+
+#latest-products ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+}
+
+.food-item {
+	background: hsl(39, 100%, 80%);
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.food-item img {
+	width: 100%;
+	height: 240px;
+	object-fit: cover;
+}
+
+.food-item-content {
+	padding: 16px;
+}
+
+.food-item-content h2 {
+	color: rgb(87, 44, 44);
+}
+
+.food-item-content button {
+	color: white;
+	background-color: hsl(39, 100%, 50%);
+	padding: 8px 24px;
+	border-radius: 6px;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.food-item-content button:hover {
+	background-color: hsl(34, 95%, 50%);
+}
