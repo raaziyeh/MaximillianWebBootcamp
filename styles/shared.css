@@ -14,8 +14,8 @@ a {
 }
 
 #main-header {
-	height: 80px;
-	padding: 0 20px;
+	height: 5rem;
+	padding: 0 5%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -23,7 +23,7 @@ a {
 }
 
 #logo {
-	font-size: 24px;
+	font-size: 1.5rem;
 	color: rgb(185, 131, 31);
 	text-transform: uppercase;
 	font-weight: bold;
@@ -31,15 +31,17 @@ a {
 
 #main-header nav ul {
 	display: flex;
+	margin-block-start: 0;
+	margin-block-end: 0;
 }
 
 #main-header nav li {
-	margin: 0 16px;
+	margin: 0 1rem;
 }
 
 #main-header nav li a {
 	color: hsl(39, 71%, 36%);
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 #main-header nav li a:hover {

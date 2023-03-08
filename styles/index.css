@@ -3,27 +3,27 @@ body {
 }
 
 main {
-	padding: 20px 40px;
+	padding: 1.25rem 2.5rem;
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
 main h1 {
 	color: rgb(238, 164, 80);
-	font-size: 48px;
+	font-size: 3rem;
 	text-align: center;
 }
 
 #latest-products {
 	width: 80%;
-	margin: 50px auto;
+	margin: 2rem auto;
 	text-align: center;
 }
 
 #latest-products ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 16px;
+	gap: 1rem;
 }
 
 .food-item {
@@ -34,12 +34,12 @@ main h1 {
 
 .food-item img {
 	width: 100%;
-	height: 240px;
+	height: 15rem;
 	object-fit: cover;
 }
 
 .food-item-content {
-	padding: 16px;
+	padding: 1rem;
 }
 
 .food-item-content h2 {
@@ -49,10 +49,10 @@ main h1 {
 .food-item-content button {
 	color: white;
 	background-color: hsl(39, 100%, 50%);
-	padding: 8px 24px;
+	padding: 0.5rem 1.5rem;
 	border-radius: 6px;
 	border: none;
-	font-size: 16px;
+	font-size: 1rem;
 	cursor: pointer;
 }
 
