@@ -29,6 +29,20 @@ a {
 	font-weight: bold;
 }
 
+.menu-btn {
+	display: none;
+	width: 3rem;
+	height: 3rem;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.menu-btn span {
+	height: 3px;
+	width: 100%;
+	background-color: white;
+}
+
 #main-header nav ul {
 	display: flex;
 	margin-block-start: 0;
@@ -46,4 +60,55 @@ a {
 
 #main-header nav li a:hover {
 	color: rgb(185, 131, 31);
+}
+
+#side-menu {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgb(27, 26, 29);
+}
+
+#side-menu:target {
+	display: block;
+}
+
+#side-menu header {
+	height: 5rem;
+	padding: 0 5%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#side-menu nav {
+	padding: 4rem 1rem;
+}
+
+#side-menu ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#side-menu li {
+	margin: 1rem 0;
+}
+
+#side-menu a {
+	color: rgb(254, 255, 253);
+	font-size: 2rem;
+}
+
+@media (max-width: 48rem) {
+	#main-header nav {
+		display: none;
+	}
+
+	.menu-btn {
+		display: flex;
+	}
 }

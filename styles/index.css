@@ -59,3 +59,13 @@ main h1 {
 .food-item-content button:hover {
 	background-color: hsl(34, 95%, 50%);
 }
+
+@media (max-width: 48rem) {
+	main h1 {
+		font-size: 1.5rem;
+	}
+
+	#latest-products ul {
+		grid-template-columns: 1fr;
+	}
+}
