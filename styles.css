@@ -36,6 +36,7 @@ select {
 	border-radius: 4px;
 	border: 1px solid #c3bfbf;
 	margin-bottom: 1rem;
+	font: inherit;
 }
 
 .form-control-inline {
