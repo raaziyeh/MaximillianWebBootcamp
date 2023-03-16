@@ -14,7 +14,7 @@ ul {
 }
 
 form {
-	background-color: rgb(248, 247, 251);
+	background-color: rgb(239, 243, 247);
 	border-radius: 6px;
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 	padding: 1rem;
@@ -27,7 +27,7 @@ form label {
 	margin-bottom: 0.5rem;
 }
 
-form input,
+input,
 textarea,
 select {
 	width: 100%;
@@ -36,7 +36,16 @@ select {
 	border-radius: 4px;
 	border: 1px solid #c3bfbf;
 	margin-bottom: 1rem;
+	outline: none;
 	font: inherit;
+}
+
+input:focus,
+input:active input:focus-visible,
+textarea:focus,
+textarea:active {
+	background-color: rgb(206, 212, 241);
+	border-color: rgb(139, 147, 202);
 }
 
 .form-control-inline {
