@@ -1,12 +1,12 @@
-let productNameInputElement = document.getElementById("product-name")
-let remainedCharsElement = document.getElementById("remaining-chars")
+const productNameInputElement = document.getElementById("product-name")
+const remainedCharsElement = document.getElementById("remaining-chars")
 
-let maxAllowedChars = productNameInputElement.maxLength
+const maxAllowedChars = productNameInputElement.maxLength
 
 function updateRemainingChars(event) {
-	let enteredText = event.target.value
-	let enteredTextLength = enteredText.length
-	let remainingChars = maxAllowedChars - enteredTextLength
+	const enteredText = event.target.value
+	const enteredTextLength = enteredText.length
+	const remainingChars = maxAllowedChars - enteredTextLength
 	remainedCharsElement.textContent = remainingChars
 }
 
