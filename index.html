@@ -5,10 +5,19 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link rel="stylesheet" href="styles.css" />
 		<script src="/app.js" async></script>
 	</head>
 	<body>
-		<p>Javascript events input vs change</p>
-		<input type="text">
+		<form>
+			<section>
+				<label for="product-input">Product Name</label>
+				<input type="text" id="product-input" maxlength="60" />
+				<span>
+					<span id="remaining-chars">60</span>/60
+				</span>
+			</section>
+			<div class="actions"><button>Submit</button></div>
+		</form>
 	</body>
 </html>
