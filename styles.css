@@ -25,6 +25,7 @@ form input {
 	display: inline-block;
 	margin-right: 1rem;
 	width: 20rem;
+    font-size: 1rem;
 }
 
 form input:focus {
