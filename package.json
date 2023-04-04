@@ -1,0 +1,22 @@
+{
+  "name": "8-nodejs_introduction",
+  "version": "1.0.0",
+  "description": "Getting Started with NodeJS and ExpressJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raaziyeh/MaximillianWebBootcamp.git"
+  },
+  "author": "Raziyeh Soradi Moghaddam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raaziyeh/MaximillianWebBootcamp/issues"
+  },
+  "homepage": "https://github.com/raaziyeh/MaximillianWebBootcamp#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
