@@ -63,7 +63,11 @@ app.get("/restaurants/:id", function (req, res) {
 			// return res.render("restaurant-detail", { rid: restaurantId, restaurant })
 		}
 	}
-	
+	res.render("404")
+})
+
+app.use(function(req, res) {
+	res.render("404")
 })
 
 app.listen(3000)
