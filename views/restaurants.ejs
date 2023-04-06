@@ -12,9 +12,8 @@
 			<% if (restaurants.length !== 0) { %>
 			<p>we found <%= numberOfRestaurants %> restaurants</p>
 			<ul id="restaurants-list">
-				<% for (const restaurant of restaurants) {%>
-					<%- include('includes/restaurants/restaurant-item', {restaurant})%>
-				<% } %>
+				<% for (const restaurant of restaurants) {%> <%-
+				include('includes/restaurants/restaurant-item', {restaurant})%> <% } %>
 			</ul>
 			<% } else { %>
 			<p>We do not have any suggestions yet, why not you make one?</p>
