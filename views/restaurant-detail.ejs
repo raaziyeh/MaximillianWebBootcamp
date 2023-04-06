@@ -2,12 +2,16 @@
 <html lang="en">
 	<head>
 		<%- include('includes/head')%>
-		<link rel="stylesheet" href="styles/restaurants.css" />
+		<link rel="stylesheet" href="/styles/restaurants.css" />
 	</head>
 	<body>
 		<%- include('includes/header') %>
 		<main>
-            <h1>Restaurant <%= rid %></h1>
+            <h1><%= restaurant.name%></h1>
+            <h2><%= restaurant.cuisine %></h2>
+            <address><%= restaurant.address %></address>
+            <p><%= restaurant.description%></p>
+            <p><a href="<%= restaurant.website %>">View Website</a></p>
 		</main>
 	</body>
 </html>
