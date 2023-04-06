@@ -1,7 +1,7 @@
-const fs = require('fs')
-const path = require('path')
+const fs = require("fs")
+const path = require("path")
 
-const express = require('express')
+const express = require("express")
 const uuid = require("uuid")
 
 const storedRestaurantData = require("../utils/restaurant-data")
@@ -26,10 +26,35 @@ router.post("/recommend", function (req, res) {
 })
 
 router.get("/restaurants", function (req, res) {
+	let order = req.query.order
+
+	let nextOrder = "desc"
+	if (order === "desc") {
+		nextOrder = "asc"
+	}
+
 	const restaurantsData = storedRestaurantData.getStoredRestaurants()
+
+	restaurantsData.sort(function (restA, restB) {
+		if (order === "asc") {
+			if (restA > restB) {
+				return -1
+			} else {
+				return 1
+			}
+		} else if (order === "desc") {
+			if (restA > restB) {
+				return 1
+			} else {
+				return -1
+			}
+		}
+	})
+
 	res.render("restaurants", {
 		numberOfRestaurants: restaurantsData.length,
 		restaurants: restaurantsData,
+		nextOrder,
 	})
 })
 
