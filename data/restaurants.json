@@ -1,1 +1,16 @@
-[{"name":"Arash Burger","address":"Hashemiye","cuisine":"Burgers","website":"https://arashburger.com","description":"very delicious"},{"name":"test","address":"test address","cuisine":"test type","website":"https://test.com","description":"test test"}]
+[
+	{
+		"name": "Arash Burger",
+		"address": "Hashemiye",
+		"cuisine": "Burgers",
+		"website": "https://arashburger.com",
+		"description": "very delicious"
+	},
+	{
+		"name": "test",
+		"address": "test address",
+		"cuisine": "test type",
+		"website": "https://test.com",
+		"description": "test test"
+	}
+]
