@@ -85,6 +85,11 @@ router.post("/posts/:id/edit", async function (req, res) {
 	res.redirect("/posts")
 })
 
+router.post("/posts/:id/delete", async function(req, res) {
+    await db.query("DELETE FROM blog.posts WHERE id = ?", req.params.id)
+    res.redirect("/posts")
+})
+
 router.get("/new-post", async function (req, res) {
 	const [authors] = await db.query("SELECT * FROM blog.authors")
 	res.render("create-post", { authors })
