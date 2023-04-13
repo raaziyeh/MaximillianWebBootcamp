@@ -44,25 +44,45 @@ router.get("/posts/:id", async function (req, res) {
         WHERE blog.posts.id = ${postId}
         `
 	const [[post]] = await db.query(query)
-    
 
 	if (!post) {
 		res.status(404).render("404")
 	}
 
-    const postData = {
-        ...post,
-        humanReadableDate : post.date.toLocaleDateString('en-US', {
-            weekDay: 'long',
-            month: 'long',
-            day: 'numeric',
-            year: 'numeric'
-        })
-    }
+	const postData = {
+		...post,
+		humanReadableDate: post.date.toLocaleDateString("en-US", {
+			weekDay: "long",
+			month: "long",
+			day: "numeric",
+			year: "numeric",
+		}),
+	}
 
-    console.log(postData)
+	console.log(postData)
 
 	res.render("post-detail", { postData })
+})
+
+router.get("/posts/:id/edit", async function (req, res) {
+	const postId = req.params.id
+	const query = `SELECT * FROM blog.posts WHERE posts.id = ${postId}`
+	const [post] = await db.query(query)
+	if (!post || post.length === 0) {
+		res.status(404).render("404")
+	}
+	res.render("update-post", { post: post[0] })
+})
+
+router.post("/posts/:id/edit", async function (req, res) {
+	const query = `
+        UPDATE blog.posts SET title = ?, body = ?, summary = ?
+        WHERE id = ?
+        `
+        console.log(query)
+	await db.query(query, [req.body.title, req.body.content, req.body.summary, req.params.id])
+
+	res.redirect("/posts")
 })
 
 router.get("/new-post", async function (req, res) {
