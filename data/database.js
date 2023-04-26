@@ -17,6 +17,6 @@ function getDb() {
 }
 
 module.exports = {
-	connectToDatabase: connectToDatabase,
-	getDb: getDb,
+	connectToDatabase,
+	getDb,
 }
