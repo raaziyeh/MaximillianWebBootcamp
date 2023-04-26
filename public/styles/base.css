@@ -34,3 +34,10 @@ input {
 	border-radius: 4px;
 	text-decoration: none;
 }
+
+#preview-img {
+	display: none;
+	width: 3rem;
+	height: 3rem;
+	object-fit: cover;
+}
